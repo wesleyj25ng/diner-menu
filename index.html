@@ -1,0 +1,58 @@
+<html>
+    <head>
+       <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header id="header">
+            <div class="container">
+                <h1>Wesley's Diner</h1>
+                <h3>The best burgers and pizza in town</h3>
+            </div>
+        </header>
+        <main>
+            <section>
+                <div class="container">
+                    <div id="menu">
+                        
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container" id="order">
+                    <h2>Your Order</h2>
+                    <div id="order-list">
+
+                    </div>
+                    <div class="your-order">
+                        <p>Total price:</p>
+                        <p id="total-price">$0</p>
+                    </div>
+                    <button id="order-btn" class="green-btn">Complete order</button>
+                </div>
+            </section>
+            <section id="thank-you">
+                <div class="container">
+                    <p id="thank-you-msg"></p>
+                </div>
+            </section>
+            <div id="popup">
+                <form id="payment-form">
+                    <button type="button" id="close-form-btn">x</button>
+                    <p>Enter Card Details</p>
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="text" placeholder="Enter card number" pattern="[0-9]{16}">
+                    <input type="text" placeholder="Enter CVV" pattern="[0-9]{3}">
+                    <button type="submit" class="green-btn" id="pay-btn">Pay</button>
+                </form>
+            </div>
+        </main>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
